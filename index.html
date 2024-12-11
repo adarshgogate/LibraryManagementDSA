@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Library Management System</h1>
+    <div class="navigation">
+      <button id="addBookBtn">Add Book</button>
+      <button id="viewBooksBtn">View Books</button>
+      <button id="searchBooksBtn">Search Books</button>
+    </div>
+
+    <!-- Add Book Section -->
+    <div class="section" id="addBookSection">
+      <h2>Add a New Book</h2>
+      <input type="text" id="newISBN" placeholder="ISBN" />
+      <input type="text" id="newBookName" placeholder="Book Name" />
+      <input type="text" id="newAuthorName" placeholder="Author Name" />
+      <input type="text" id="newGenre" placeholder="Genre" />
+      <button id="addBookButton">Add Book</button>
+    </div>
+
+    <!-- View Books Section -->
+    <div class="section" id="viewBooksSection" style="display: none;">
+      <h2>All Books</h2>
+      <div class="book-list" id="bookListView"></div>
+    </div>
+
+    <!-- Search Books Section -->
+    <div class="section" id="searchBooksSection" style="display: none;">
+      <h2>Search Books</h2>
+      <input type="text" id="searchBar" placeholder="Search by Book Name or Author" />
+      <button id="searchButton">Search</button>
+      <div class="book-list" id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
